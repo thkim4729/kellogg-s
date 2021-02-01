@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>농심켈로그(주)</title>
+        <link rel="shortcut icon" href="/img/favicon.ico" />
+        <link rel="icon" href="/img/favicon.ico" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/font.css" />
+        <script src="js/jquery-3.5.1.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div id="inner">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="https://kellogg.co.kr/Images/Common/logo_1280.png" alt="로고" />
+                    </a>
+                </h1>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">Brand & Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Cereal & Nutrition</a>
+                    </li>
+                    <li>
+                        <a href="#">Better Days</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About Kellogg's
+                            <i class="fas fa-angle-down" style="margin-left: 8px"></i>
+                            <ul class="gnb-sub">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">회사연혁</a></li>
+                                <li><a href="#">켈로그의 가치</a></li>
+                                <li><a href="#">인재채용</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="e-ver">Kellogg's Shop</span>
+                            <span class="k-ver">켈로그 샵</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <script>
+            $('.gnb>li').hover(function () {
+                $(this).children('.gnb-sub').stop().slideToggle(250);
+            });
+            setInterval(function () {
+                $('.gnb>li>a>.e-ver').toggle();
+            }, 750);
+        </script>
+        <div id="content">
+            <div class="visual">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-1" style="height: 820px">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://kellogg.co.kr/Images/Main/desktop_main0.png);
+                            "
+                        >
+                            <div class="hashtag">
+                                <p class="hashtag-title">Kellogg’s Online Shop</p>
+                                <span class="hashtag-info"
+                                    >맛과 영양을 고루 갖춘 켈로그 제품을 온라인에서 빠르게 주문하고
+                                    받아보세요!</span
+                                >
+                                <a href="#" class="hashtag-link">
+                                    <p>Kellogg's shop 보기</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://kellogg.co.kr/Images/Main/desktop_main1.png);
+                            "
+                        ></div>
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://kellogg.co.kr/Images/Main/desktop_main2.png);
+                            "
+                        >
+                            <div class="hashtag">
+                                <span class="hashtag-white">#좋은 것만 드려요~</span>
+                            </div>
+                        </div>
+                        <div
+                            class="swiper-slide"
+                            style="
+                                background-image: url(https://kellogg.co.kr/Images/Main/desktop_main3.png);
+                            "
+                        ></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-black"></div>
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                </div>
+            </div>
+            <div id="inner">
+                <div class="products-list">
+                    <div class="text-wrap">
+                        <h2>
+                            켈로그
+                            <p>제품</p>
+                        </h2>
+                        <a href="#">
+                            <p>더보기</p>
+                            <span>
+                                <i></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="similar-wrap">
+                        <ul class="similar-products-list">
+                            <li class="similar-products-item">
+                                <a href="#">
+                                    <img
+                                        src="https://kellogg.co.kr/Images/Main/img_product_five_grain_checkschoco.png?ver=200909"
+                                        alt="첵스초코"
+                                    />
+                                </a>
+                            </li>
+                            <li class="similar-products-item">
+                                <a href="#">
+                                    <img
+                                        src="https://kellogg.co.kr/Images/Products/chaw_gcc_1x.png"
+                                        alt="한입그래놀라"
+                                    />
+                                </a>
+                            </li>
+                            <li class="similar-products-item">
+                                <a href="#">
+                                    <img
+                                        src="https://kellogg.co.kr/Images/Products/bg_1x.png"
+                                        alt="블루베리아몬드그래놀라"
+                                    />
+                                </a>
+                            </li>
+                            <li class="similar-products-item">
+                                <a href="#">
+                                    <img
+                                        src="https://kellogg.co.kr/Images/Products/pg_apple_bar_1x.png"
+                                        alt="프로틴그래놀라바"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="inner" style="margin-top: 40px">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product-detail-summary" style="width: 1180px">
+                            <div class="info-img-tablet">
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/beautycut_five_grain_checkschoco.png"
+                                    alt="오곡으로 만든 첵스 초코"
+                                />
+                            </div>
+                            <div class="detail-tablet">
+                                <div class="product-logo">
+                                    <span>초코시리얼</span>
+                                </div>
+                                <div class="summary-inner">
+                                    <div class="product-tit">
+                                        오곡으로 맛있게 채운 한끼.
+                                        <br />
+                                        진한 초콜릿 맛 첵스초코!
+                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="#">
+                                            <p>더보기</p>
+                                            <span>
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="product-thumb-detail">
+                                        <div class="weight">
+                                            <span class="title">중량</span>
+                                            <div class="inner">
+                                                <div>30g</div>
+                                            </div>
+                                        </div>
+                                        <div class="shelf-life">
+                                            <span class="title">유통기한</span>
+                                            <div class="inner">
+                                                <div>12개월</div>
+                                            </div>
+                                        </div>
+                                        <div class="calory">
+                                            <span class="title">열량</span>
+                                            <span class="sub-txt">30g당 함량</span>
+                                            <div class="inner">
+                                                <div>121kcal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-detail-summary" style="width: 1180px">
+                            <div class="info-img-tablet">
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/chaw_gcc_bn.png"
+                                    alt="한입 그래놀라 체다치즈 맛"
+                                />
+                            </div>
+                            <div class="detail-tablet">
+                                <div class="product-logo">
+                                    <span>그래놀라</span>
+                                </div>
+                                <div class="summary-inner">
+                                    <div class="product-tit">
+                                        바삭하게 구운 곡물을 색다르게,
+                                        <br />
+                                        스낵으로 즐길 수 있는 한입 그래놀라 체다치즈 맛!
+                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="#">
+                                            <p>더보기</p>
+                                            <span>
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="product-thumb-detail">
+                                        <div class="weight">
+                                            <span class="title">중량</span>
+                                            <div class="inner">
+                                                <div>50g</div>
+                                            </div>
+                                        </div>
+                                        <div class="shelf-life">
+                                            <span class="title">유통기한</span>
+                                            <div class="inner">
+                                                <div>12개월</div>
+                                            </div>
+                                        </div>
+                                        <div class="calory">
+                                            <span class="title">열량</span>
+                                            <span class="sub-txt">30g당 함량</span>
+                                            <div class="inner">
+                                                <div>232kcal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-detail-summary" style="width: 1180px">
+                            <div class="info-img-tablet">
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/beautycut_blueberry_almond_granola.png"
+                                    alt="블루베리 아몬드 그래놀라"
+                                />
+                            </div>
+                            <div class="detail-tablet">
+                                <div class="product-logo">
+                                    <span>그래놀라</span>
+                                </div>
+                                <div class="summary-inner">
+                                    <div class="product-tit">
+                                        리얼블루베리에 통아몬드슬라이스가
+                                        <br />
+                                        더해진 맛과 영양 가득한 그래놀라
+                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="#">
+                                            <p>더보기</p>
+                                            <span>
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="product-thumb-detail">
+                                        <div class="weight">
+                                            <span class="title">중량</span>
+                                            <div class="inner">
+                                                <div>450g</div>
+                                            </div>
+                                        </div>
+                                        <div class="shelf-life">
+                                            <span class="title">유통기한</span>
+                                            <div class="inner">
+                                                <div>12개월</div>
+                                            </div>
+                                        </div>
+                                        <div class="calory">
+                                            <span class="title">열량</span>
+                                            <span class="sub-txt">30g당 함량</span>
+                                            <div class="inner">
+                                                <div>439kcal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-detail-summary" style="width: 1180px">
+                            <div class="info-img-tablet">
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/beautycut_pg_apple_bar.png"
+                                    alt="프로틴 그래놀라바 사과맛"
+                                />
+                            </div>
+                            <div class="detail-tablet">
+                                <div class="product-logo">
+                                    <span>켈로그바</span>
+                                </div>
+                                <div class="summary-inner">
+                                    <div class="product-tit">
+                                        영양 가득 그래놀라와 식이섬유 그리고 단백질 6g을 담은 켈로그
+                                        프로틴 그래놀라바 상큼한 사과맛
+                                    </div>
+                                    <div class="more-wrap">
+                                        <a href="#">
+                                            <p>더보기</p>
+                                            <span>
+                                                <i></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="product-thumb-detail">
+                                        <div class="weight">
+                                            <span class="title">중량</span>
+                                            <div class="inner">
+                                                <div>30g</div>
+                                            </div>
+                                        </div>
+                                        <div class="shelf-life">
+                                            <span class="title">유통기한</span>
+                                            <div class="inner">
+                                                <div>12개월</div>
+                                            </div>
+                                        </div>
+                                        <div class="calory">
+                                            <span class="title">열량</span>
+                                            <span class="sub-txt">30g당 함량</span>
+                                            <div class="inner">
+                                                <div>121kcal</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button"></div>
+                    <div class="swiper-button-prev swiper-button"></div>
+                </div>
+            </div>
+            <div id="inner">
+                <ul class="nutrition-list">
+                    <li>
+                        <a href="#">
+                            <span class="text-wrap">
+                                시리얼의 영향
+                                <p>살펴보기</p>
+                                <span>View more</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-wrap">
+                                씨앗에서 식탁까지
+                                <p>책임감있는 원료관리</p>
+                                <span>View more</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-wrap">
+                                영양정보
+                                <p>들여다보기</p>
+                                <span>View more</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="text-wrap">
+                                시리얼의
+                                <p>혁신</p>
+                                <span>View more</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="inner">
+                <div class="sns-wrap">
+                    <div class="sns-title">
+                        <span>
+                            <img src="https://kellogg.co.kr/Images/Common/logo_white.png" alt="" />
+                        </span>
+                        <p>Our Social Channels</p>
+                    </div>
+                    <div class="sns-link">
+                        <div>
+                            <a href="https://youtu.be/IwMpUj89hNk" target="_blank" class="youtube">
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/img_youtube.jpg?ver=201207"
+                                    alt="[켈로그 에너지바K] 뭐어 에너지 로그아웃?지금 바로 켈로그로 로그인!"
+                            /></a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.instagram.com/p/CKlR4QsHiJK/"
+                                target="_blank"
+                                class="instagram"
+                            >
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/img_Instagram_1.jpg?ver=210129"
+                                    alt="프로틴 브랜드대상 수상"
+                            /></a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://www.instagram.com/p/CKU4x0Zn69R/"
+                                target="_blank"
+                                class="instagram"
+                            >
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/img_Instagram_2.jpg?ver=210129"
+                                    alt="프로틴 레시피"
+                                />
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://blog.naver.com/kelloggs_kr/222203641170"
+                                target="_blank"
+                                class="naver-blog"
+                            >
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/img_naver_blog_1.jpg?ver=210113"
+                                    alt="좋은 것만 드리는 켈로그의 새 비전과 목표"
+                                />
+                            </a>
+                        </div>
+                        <div>
+                            <a
+                                href="https://blog.naver.com/kelloggs_kr/222204877269"
+                                target="_blank"
+                                class="naver-blog"
+                            >
+                                <img
+                                    src="https://kellogg.co.kr/Images/Main/img_naver_blog_2.jpg?ver=210113"
+                                    alt="농심켈로그 가족친화기업 3회 연속 인증"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content -->
+
+        <footer id="footer">
+            <div id="inner">
+                <h1 class="logo">
+                    <a href="/">
+                        <img src="https://kellogg.co.kr/Images/Common/logo_white.png" alt="로고" />
+                    </a>
+                </h1>
+                <p class="copyright">© 2020 KELLOGG Co Ltd ALL RIGHT RESERVED.</p>
+                <div class="footer-etc">
+                    <div class="sns">
+                        <a
+                            href="https://www.youtube.com/channel/UC0Ab7cfFW5CZ6AUbQvkChVw"
+                            target="_blank"
+                        >
+                            <em class="blind">유튜브</em>
+                        </a>
+                        <a href="https://www.instagram.com/kelloggs_korea/" target="_blank">
+                            <em class="blind">인스타그램</em>
+                        </a>
+                        <a href="https://blog.naver.com/kelloggs_kr" target="_blank">
+                            <em class="blind">네이버 블로그</em>
+                        </a>
+                    </div>
+                    <div class="lang">
+                        <select
+                            onchange="if(this.value) location.href=(this.value);"
+                            name="lang"
+                            id="lang-select"
+                        >
+                            <option value="Language">Language</option>
+                            <optgroup label="North America">
+                                <option value="https://www.kelloggs.com/">
+                                    United States | English
+                                </option>
+                                <option value="http://www.diasgrandiosos.com/">
+                                    United States | Español
+                                </option>
+                                <option
+                                    value="https://www.kelloggs.ca/content/NorthAmerica/kelloggca/en_CA/home.html"
+                                >
+                                    Canada | English
+                                </option>
+                                <option
+                                    value="https://www.kelloggs.ca/content/NorthAmerica/kelloggca/fr_CA/home.html"
+                                >
+                                    Canada | Français
+                                </option>
+                                <option value="https://www.kelloggs.com.mx/">
+                                    Mexico | Español
+                                </option>
+                            </optgroup>
+                            <optgroup label="Central America">
+                                <option value="https://www.kelloggs.com.gt">
+                                    Guatemala | Español
+                                </option>
+                            </optgroup>
+                            <optgroup label="Latin & South America">
+                                <option value="https://www.kelloggsargentina.com">
+                                    Argentina | Español
+                                </option>
+                                <option value="https://www.kelloggs.com.br/">
+                                    Brasil | Português
+                                </option>
+                                <option value="https://www.kelloggs.cl/">Chile | Español</option>
+                                <option value="https://www.kelloggs.com.co/">
+                                    Colombia | Español
+                                </option>
+                                <option value="https://www.kelloggs.com.ec/">
+                                    Ecuador | Español
+                                </option>
+                                <option value="https://www.kelloggs.com.py/">
+                                    Paraguay | Español
+                                </option>
+                                <option value="https://www.kelloggs.com.pe/">Peru | Español</option>
+                                <option value="https://www.kelloggsuruguay.com.uy/">
+                                    Uruguay | Español
+                                </option>
+                                <option value="https://www.kelloggs.com.ve/">
+                                    Venezuela | Español
+                                </option>
+                            </optgroup>
+                            <optgroup label="Europe & Middle East">
+                                <option value="https://www.kelloggs.be/nl_BE/home.html">
+                                    Belgie/Belgique | Nederlands
+                                </option>
+                                <option value="https://www.kelloggs.be/fr_BE/home.html">
+                                    Belgie/Belgique | Français
+                                </option>
+                                <option value="https://www.kelloggs.dk">Danmark | Dansk</option>
+                                <option value="https://www.kelloggs.de">
+                                    Deutschland | Deutsch
+                                </option>
+                                <option value="https://www.kelloggs.es/">España | Español</option>
+                                <option value="https://www.kelloggs.fr/">France | Français</option>
+                                <option value="https://www.kelloggs.gr/el_GR/home.html">
+                                    Ελλάδα/Greece | ελληνική
+                                </option>
+                                <option value="https://www.kelloggs.gr/en_GR/home.html">
+                                    Ελλάδα/Greece | English
+                                </option>
+                                <option value="https://www.kelloggs.ie/">Ireland | English</option>
+                                <option value="https://www.kelloggs.it">Italia | Italiano</option>
+                                <option value="https://www.kelloggs.nl/nl_NL/home.html">
+                                    Nederland | Nederlands
+                                </option>
+                                <option value="https://www.kelloggs.no">Norge | Norsk</option>
+                                <option value="https://www.kelloggs.at">
+                                    Österreich | Deutsch
+                                </option>
+                                <option value="https://www.kelloggs.pt/">
+                                    Portugal | Português
+                                </option>
+                                <option value="https://www.kelloggs.ru/ru_RU/home.html">
+                                    Россия | Русский
+                                </option>
+                                <option value="https://www.kelloggs.de/de_DE/home.html">
+                                    Schweiz | Deutsch
+                                </option>
+                                <option value="https://www.kelloggs.ch/fr_CH/home.html">
+                                    Suisse | Français
+                                </option>
+                                <option value="https://www.kelloggs.fi">Suomi | Suomi</option>
+                                <option value="https://www.kelloggs.se">Sverige | Svenska</option>
+                                <option
+                                    value="https://www.kelloggs.com.tr/content/Europe/kelloggs_tr/tr_TR/pages/home.html"
+                                >
+                                    Türkiye | Türkçe
+                                </option>
+                                <option value="https://www.kelloggs.co.uk/">
+                                    United Kingdom | English
+                                </option>
+                            </optgroup>
+                            <optgroup label="Africa">
+                                <option value="https://www.kelloggs.co.za">
+                                    South Africa | English
+                                </option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="https://www.kelloggs.jp/">日本 | 日本語</option>
+                                <option value="https://www.kellogg.co.kr/">
+                                    대한민국 | 한국어
+                                </option>
+                                <option value="https://www.kelloggs.com.tw/">
+                                    台灣 | 繁體中文
+                                </option>
+                                <option value="https://www.kelloggs.cn/">
+                                    中国大陆 | 简体中文
+                                </option>
+                                <option value="https://www.kelloggs.com.hk/">
+                                    香港 | 繁體中文
+                                </option>
+                                <option value="https://www.kelloggs.in/">India | English</option>
+                            </optgroup>
+                            <optgroup label="Oceania">
+                                <option value="https://www.kelloggs.com.au/">
+                                    Australia | English
+                                </option>
+                                <option value="https://www.kelloggs.co.nz/">
+                                    New Zealand | English
+                                </option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="info">
+                        <button type="button" class="btn">
+                            <i class="fas fa-angle-double-up fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button class="top" type="button">
+            <em class="blind">맨 위로 이동</em>
+        </button>
+
+        <script>
+            let swiper = new Swiper('.swiper-container-1', {
+                effect: 'fade',
+                touchRatio: 0, //드래그 금지
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                autoplay: {
+                    delay: 5000,
+                },
+            });
+            let swiper2 = new Swiper('.swiper-container-2', {
+                touchRatio: 0, //드래그 금지
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+            $(document).ready(function () {
+                // 처음에는 안보이게 숨기기
+                $('.top').hide();
+                //  스크롤 탑 + fadein 효과
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.top').fadeIn();
+                    } else {
+                        $('.top').fadeOut();
+                    }
+                });
+                //클릭했을 때 스르륵 올라가도록 애니메이션 효과
+                $('.top').click(function () {
+                    $('body,html').animate(
+                        {
+                            scrollTop: 0,
+                        },
+                        500
+                    );
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

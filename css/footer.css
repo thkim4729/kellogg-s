@@ -1,0 +1,93 @@
+@charset "utf-8";
+#footer {
+    position: relative;
+    background-color: #d20b2f;
+    color: #fff;
+    padding: 0 20px;
+    z-index: 98;
+    height: 80px;
+    display: flex;
+}
+#footer #inner {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer .logo {
+}
+#footer .copyright {
+    font-size: 14px;
+}
+#footer .footer-etc {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .footer-etc .sns {
+    overflow: hidden;
+    display: inline-block;
+    flex: 0 0 auto;
+}
+#footer .footer-etc .sns > a {
+    float: left;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+#footer .footer-etc .sns > a:nth-child(1) {
+    background: url(https://kellogg.co.kr/Images/Common/icon_foot_youtube.png) no-repeat center 0;
+    background-size: 24px 24px;
+}
+#footer .footer-etc .sns > a:nth-child(2) {
+    background: url(https://kellogg.co.kr/Images/Common/icon_foot_instagram.png) no-repeat center 0;
+    background-size: 24px 24px;
+    margin: 0 10px;
+}
+#footer .footer-etc .sns > a:nth-child(3) {
+    background: url(https://kellogg.co.kr/Images/Common/icon_foot_naver_blog.png) no-repeat center 0;
+    background-size: 24px 24px;
+}
+#footer .footer-etc .lang {
+    flex: 0 0 236px;
+    text-align: right;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 16px;
+}
+#footer .footer-etc .lang #lang-select {
+    height: 24px;
+    background-color: #d20b2f;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+}
+#footer .footer-etc .lang #lang-select option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#footer .footer-etc .info {
+    flex: 0 0 66px;
+    position: relative;
+}
+#footer .footer-etc .info .btn {
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: 0;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    color: #fff;
+    text-align: center;
+}
+#footer .footer-etc .info .btn i {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,63 @@
+@charset "utf-8";
+@import url('../fonts/KelloggsSans-Bold.ttf');
+@import url('../fonts/KelloggsSans-Medium.ttf');
+@import url('../fonts/KelloggsSans-Regular.ttf');
+@import url('header.css');
+@import url('content.css');
+@import url('footer.css');
+body {
+    font-family: KelloggsSans, 'Noto Sans KR', AppleGothic, Sans-serif;
+}
+#inner {
+    max-width: 1180px;
+    width: 1180px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: auto;
+}
+.top {
+    position: fixed;
+    bottom: 90px;
+    right: 36px;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 20px 0 rgb(113 94 97 / 15%);
+    border-radius: 50%;
+    border: 0;
+    z-index: 100;
+    cursor: pointer;
+    outline: none;
+}
+.top::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 50%;
+    width: 2px;
+    height: 18px;
+    margin: -9px 0 0 -1px;
+    background-color: #00a9f4;
+}
+.top::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 49%;
+    top: 22px;
+    margin-left: -5px;
+    border-top: 2px solid #00a9f4;
+    right: 0;
+    border-right: 2px solid #00a9f4;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
