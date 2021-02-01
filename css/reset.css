@@ -54,7 +54,10 @@ ul,
 li {
     list-style: none;
 }
-
+em,
+address {
+    font-style: normal;
+}
 a {
     color: #333;
     text-decoration: none;
